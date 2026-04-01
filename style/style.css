@@ -126,11 +126,6 @@ body {
   padding: 5px 7px;
 }
 
-.href-button:hover {
-  color: #989171;
-  transition: all 0.3s;
-}
-
 .line {
   max-width: 359px;
   width: 100%;
