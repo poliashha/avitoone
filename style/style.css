@@ -73,6 +73,10 @@ body {
   gap: 63px;
 }
 
+.card{
+  padding: 0 10px;
+}
+
 .title-main {
   font-weight: 400;
   font-size: clamp(35px, calc(19.4px + 5vw), 40px);
