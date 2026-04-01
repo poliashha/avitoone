@@ -263,8 +263,8 @@ body {
 }
 
 .button.touch-pressed {
-  background-color: var(--background-color-light);
-  color: var(--hot-pink-color);
+  background-color: #665F3F;
+  color: #D8D3BE;
 }
 
 @media (hover: hover) {
