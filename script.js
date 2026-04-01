@@ -11,7 +11,6 @@ form.addEventListener("submit", async (e) => {
   const submitButton = document.querySelector(".button");
   const submitButtontext = document.querySelector(".button-text");
   submitButtontext.textContent = "Отправка...";
-  
 
   const drinksString = drinks.join(", ");
 
@@ -37,7 +36,12 @@ form.addEventListener("submit", async (e) => {
   }
 });
 
-
+document.getElementById("mapButton").addEventListener("click", function () {
+  window.open(
+    "https://yandex.ru/maps/org/dvorets_brakosochetaniya_3/1090702177?si=5nbkd3ctaxf786dq9zqaftdfg4",
+    "_blank",
+  );
+});
 
 const nameInput = document.getElementById("name");
 const errorElement = document.getElementById("error-text");
