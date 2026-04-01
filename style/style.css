@@ -1,0 +1,371 @@
+body {
+  font-family: var(--main-font), sans-serif;
+  background-color: var(--background-color);
+  font-weight: 400;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 63px;
+}
+
+.box-img {
+  max-width: 412px;
+  background-image: url(../img/arCA.png);
+  width: 100%;
+  height: 425px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.brigth-text {
+  color: var(--main-color);
+  font-weight: 400;
+  font-size: 48px;
+}
+
+.name-box {
+  padding-top: 87px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 425px;
+}
+
+.text-up {
+  position: relative;
+}
+
+.text-up::after {
+  content: "&";
+  position: absolute;
+  top: 30px;
+  left: 20px;
+  opacity: 0.46;
+  font-size: 40px;
+}
+
+.text-up::before {
+  content: "Андрей";
+  position: absolute;
+  top: 38px;
+  right: -37px;
+}
+
+.text-data {
+  font-family: var(--time-font);
+  font-size: 36px;
+  padding-top: 100px;
+}
+
+.main {
+  margin: auto;
+  max-width: 412px;
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 63px;
+}
+
+.title-main {
+  font-weight: 400;
+  font-size: clamp(35px, calc(19.4px + 5vw), 40px);
+  text-transform: uppercase;
+}
+
+.text-main {
+  font-size: 24px;
+  text-align: center;
+  max-width: 326px;
+}
+
+.greetings {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+  justify-content: center;
+  align-items: center;
+}
+
+.location {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.arca {
+  max-width: 412px;
+  width: 100%;
+}
+
+.map-button {
+  background-color: var(--button-color);
+  padding: 11px 7px;
+  border: none;
+}
+
+.href-button {
+  color: var(--background-color);
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 16px;
+  text-transform: uppercase;
+  border: 1px solid #9f9892;
+  padding: 5px 7px;
+}
+
+.href-button:hover {
+  color: #989171;
+  transition: all 0.3s;
+}
+
+.line {
+  max-width: 359px;
+  width: 100%;
+  height: 1px;
+  background-color: var(--main-color);
+  margin: 10px 25px;
+}
+
+.conteiner-time {
+  max-width: 412px;
+  margin-top: 17px;
+  background-image: url(../img/line.svg);
+  width: 100%;
+  height: 425px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.event {
+  position: relative;
+}
+
+.flower {
+  position: absolute;
+  bottom: -71px;
+  right: 16px;
+}
+
+.second_data {
+  grid-column: 2;
+}
+
+.dress-kod {
+  padding-top: 63px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-box {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  height: auto;
+  transition: height 0.3s ease;
+  padding: 0 30px;
+}
+
+.radio {
+  display: flex;
+  flex-direction: column;
+  outline: none;
+  border: none;
+  padding: 0;
+}
+
+.custom-radio input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.radio-circle {
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  border: 1px solid var(--main-color);
+  border-radius: 50%;
+  background: transparent;
+  transition: all 0.15s;
+  position: relative;
+}
+
+.input {
+  border: 1px solid #000;
+  max-width: 296px;
+  width: 100%;
+  height: 33px;
+  margin-top: 9px;
+}
+
+.custom-radio:hover .radio-circle {
+  border-color: var(--main-color);
+}
+
+.custom-radio input[type="radio"]:checked + .radio-circle {
+  border-color: var(--main-color);
+  background: var(--main-color);
+}
+
+.radio-text {
+  text-align: left;
+  font-size: 20px;
+  font-family: var(--main-font);
+  padding-bottom: 13px;
+  font-weight: 400;
+}
+
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.checkbox__input {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--main-color);
+  background-color: transparent;
+  width: 14px;
+  height: 14px;
+  outline: none;
+}
+
+.checkbox__input:checked::after {
+  content: "✓";
+  font-size: 12px;
+}
+
+.button {
+  max-width: 298px;
+  transition: all 0.3s ease;
+  padding: 4px 7px;
+}
+
+.button.touch-pressed {
+  background-color: var(--background-color-light);
+  color: var(--hot-pink-color);
+}
+
+@media (hover: hover) {
+  .button:hover {
+    background-color: var(--background-color-light);
+    color: var(--hot-pink-color);
+  }
+}
+
+.footer-text {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--hot-pink-color);
+}
+
+.form-send {
+  text-align: center;
+}
+
+.error-text {
+  display: none;
+}
+
+.error-text.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+.radio-error {
+  display: none;
+  text-align: left;
+}
+
+.radio-error.show {
+  display: block;
+  animation: show 0.3s ease;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.varints-text {
+  padding-bottom: 5px;
+}
+
+.varints {
+  padding-bottom: 13px;
+  font-size: 15px;
+  text-align: left;
+}
+
+.custom-radio {
+  font-size: 20px;
+  text-align: left;
+}
+
+.checkbox {
+  font-size: 20px;
+}
+
+.error-icon {
+  font-size: 16px;
+}
+
+.input_box {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.footer{
+  text-align: center;
+  padding: 43px 0;
+}
+
+@media (width<412px) {
+  object {
+    width: auto;
+  }
+
+  .timing {
+    max-width: 350px;
+    width: 100%;
+  }
+
+  .flower {
+    width: 170px;
+    bottom: -56px;
+  }
+  .main {
+    padding: 10px;
+  }
+}
+
+@media (width<390px) {
+  .flower {
+    right: 2px;
+  }
+}

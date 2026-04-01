@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="Свадьба | Яна & Андрей | 15.05.2026" />
+    <meta property="og:description" content="Приглашение на торжество" />
+    <!-- <meta property="og:url" content="https://mariadanya-wedding.vercel.app/">
+    <meta property="og:image" content="https://mariadanya-wedding.vercel.app/images/prewu.jpg">  -->
+    <meta property="og:image:width" content="400" />
+    <meta property="og:image:height" content="400" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta name="color-scheme" content="light" />
+    <title>Приглашение на свадьбу</title>
+    <link rel="stylesheet" href="fonts/fonts.css" />
+    <link rel="stylesheet" href="style/global.css" />
+    <link rel="stylesheet" href="style/variabels.css" />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="box-img">
+        <div class="name-box">
+          <h1 class="brigth-text text-up">Яна</h1>
+          <h1 class="brigth-text text-data">15.05.2026</h1>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <article class="card greetings">
+        <h2 class="title-main">дорогие гости!</h2>
+        <p class="text-main">
+          От всей души хотим пригласить вас на наше торжество. Очень надеемся
+          провести этот радостный день с вами!
+        </p>
+        <object
+          class="arca"
+          type="image/svg+xml"
+          data="./img/calndar.svg"
+          width="317"
+          height="245"
+        ></object>
+      </article>
+      <article class="card location">
+        <h2 class="title-main">Локация</h2>
+        <p class="text-main">
+          Церемония бракосочетания состоится по адресу: Дворец бракосочетания №
+          3 ул. Юных Ленинцев, 35, корп. 1, Москва
+        </p>
+        <object
+          class="ceremotion"
+          type="image/svg+xml"
+          data="./img/ceremotion.jpg"
+          width="354"
+          height="202"
+        ></object>
+        <button class="map-button">
+          <a
+            href="https://yandex.ru/maps/org/dvorets_brakosochetaniya_3/1090702177?si=5nbkd3ctaxf786dq9zqaftdfg4"
+            target="_blank"
+            class="href-button"
+          >
+            Посмотреть на карте
+          </a>
+        </button>
+        <span class="line"></span>
+        <p class="text-main">
+          Банкет по адресу: Ya-cafe 2&3 ул. Ленинская Слобода, 19, стр. 2,
+          Москва
+        </p>
+        <object
+          class="ceremotion"
+          type="image/svg+xml"
+          data="./img/banket.jpg"
+          width="342"
+          height="200"
+        ></object>
+        <button class="map-button">
+          <a
+            href="https://yandex.ru/maps/org/ya_cafe_2_3/11226705837?si=5nbkd3ctaxf786dq9zqaftdfg4 "
+            target="_blank"
+            class="href-button"
+          >
+            Посмотреть на карте
+          </a>
+        </button>
+      </article>
+      <article class="card programma">
+        <h2 class="title-main">Программа дня</h2>
+        <div class="event">
+          <object
+            class="timing"
+            type="image/svg+xml"
+            data="./img/timeline.svg"
+            width="360"
+            height="276"
+          ></object>
+          <img class="flower" src="./img/flower.png" alt="" />
+        </div>
+      </article>
+      <article class="card dress-kod">
+        <h2 class="title-main">дресс-код</h2>
+        <p class="text-main">
+          Мы знаем - вы прекрасны в любом наряде! Но просим нас поддержать
+          нарядами в цвете торжества
+        </p>
+        <object
+          class="timing"
+          type="image/svg+xml"
+          data="./img/dresscircle.svg"
+          width="305"
+          height="47"
+        ></object>
+      </article>
+
+      <article class="card form">
+        
+        <h2 class="title-main">Анкета </h2>
+        
+        <form  class="form-box" name="submit-to-google-sheet" id="form" action="#">
+          <label class="input_box">Ваши имя и фамилия
+          <input
+            class="input"
+            name="name"
+            id="name"
+            type="text"
+            placeholder="Иван Иванович" required
+          />
+          <span class="error-text" id="error-text">Пожалуйста, заполните поле</span>
+        </label>
+          <fieldset class="radio" >
+            <h2 class="radio-text">
+              Сможете ли вы присутствовать?
+            </h2>
+            <label class="custom-radio">
+              <input type="radio" name="presence" value="да" id="presenceYes" required/>
+              <span class="radio-circle"></span>
+              <span>Да</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="presence" value="нет" id="presenceNo" />
+              <span class="radio-circle"></span>
+              <span>Нет</span>
+            </label>
+            <label class="custom-radio">
+              <input type="radio" name="presence" value="ответит позже" id="presenceDN" />
+              <span class="radio-circle"></span>
+              <span>Отвечу позже</span>
+            </label>
+            <div class="radio-error" id="presenceError">
+          
+          Пожалуйста, выберите, один из вариантов
+        </div>
+      </fieldset>
+          </fieldset>
+
+          
+<fieldset class="radio">
+  <h2 class=" radio-text varints-text">
+             Что предпочитаете из напитков?
+            </h2>
+            <p class="varints">Можно выбрать несколько вариантов</p>
+          <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="белое вино"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Белое вино</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="красное вино"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Красное вино</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="шампанское"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Шампанское</span>
+          </label>
+          <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="коньяк"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Коньяк</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="виски"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Виски</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="водка"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Водка</span>
+          </label>
+           <label class="checkbox">
+          <input
+            name="drinks"
+            id="whitewine"
+            type="checkbox"
+            class="checkbox__input"
+            value="безалкогольные напитки"/>
+            <span class="dicorete-checkbox"></span>
+            <span>Безалкогольные напитки</span>
+          </label>
+          </fieldset>
+          <button class="map-button button" type="submit"><p class="href-button button-text">Отправить</p></button>
+          <div class="form-send"></div>
+        </form>
+      </article>
+    </main>
+    <footer class="footer">
+<h2 class="title-main">До встречи!</h2>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
