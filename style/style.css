@@ -214,6 +214,7 @@ body {
   -webkit-appearance: none;
   appearance: none;
   border-radius: 0;
+  outline: none;
 }
 
 .custom-radio:hover .radio-circle {
@@ -249,6 +250,7 @@ body {
   width: 14px;
   height: 14px;
   outline: none;
+  border-radius: 0;
 }
 
 .checkbox__input:checked::after {
