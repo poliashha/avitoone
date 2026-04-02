@@ -213,6 +213,7 @@ body {
   margin-top: 9px;
   -webkit-appearance: none;
   appearance: none;
+  border-radius: 0;
 }
 
 .custom-radio:hover .radio-circle {
