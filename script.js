@@ -1,5 +1,5 @@
 const scriptURL =
-  "https://script.google.com/macros/s/AKfycbxJ-TYVL8YeSs6wes6YD_bvEf-_AArcq_5ZnRhQkqF1qNtqPkpT8R7NGQsekby995il/exec";
+  "https://script.google.com/macros/s/AKfycbw3nnQkm21uv6NxQUT_LGIzsrzviaEw3tMZ-O7bnQbfkCn0Q2q0lj7qQnO5qnhhblFc-Q/exec";
 const form = document.forms["submit-to-google-sheet"];
 
 form.addEventListener("submit", async (e) => {
